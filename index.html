@@ -7,66 +7,82 @@
     <meta name="description" content="Это базовый курс">
     <meta name="keywords" content="html, css, tags">
     <title>info</title>
+    <link rel="stylesheet" href="css.css">  
 </head>
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="логотоп">
-    <h1>Иван</h1>
-    <p>я основатель одноименного <strong>Youtube канала</strong></p>
-    <p>я люблю <em>путешествовать, заниматься спортом</em></p>
-    <h1>Мое хобби</h1>
-    <ol>
-        <li>путешествия</li>
-        <li>спорт</li>
-        <li>танцы</li>
-    </ol>
-    <h1>Опыт работы</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Компания 1</td>
-                <td>Frontend</td>
-                <td>2015-2016</td>
-            </tr>
-            <tr>
-                <td>Компания 2</td>
-                <td>Software Engineer</td>
-                <td>2016-2017</td>
-            </tr>
-            <tr>
-                <td>Компания 3</td>
-                <td>Senior Frontend</td>
-                <td>2017-2019</td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="https://www.google.com/" target="_blank">google</a>
+    <div class="container">
+        <div class="info">
+            <img src="data:image/jpeg;base64,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" alt="фото" class="avatar">
+            <div class="info-text">    
+                <h1>Иван</h1>
+                <p>я основатель одноименного <strong>Youtube канала</strong></p>
+                <p>я люблю <em>путешествовать, заниматься спортом</em></p>
+                <a href="https://www.google.com/search?q=ivan&oq=ivan&aqs=chrome.0.69i59j46i131i433i512j0i131i433i512j0i512j46i512j0i10i512j46i199i465i512j0i131i433i512j46i512j46i131i433.2948j0j7&sourceid=chrome&ie=UTF-8" target="_blank">смотреть в google</a>
+            </div>
+        </div>
+        <div class="card bg-PaleGreen">
+            <h2>Мое хобби</h2>
+                <ol class="list">
+                    <li>путешествия</li>
+                    <li>спорт</li>
+                    <li>танцы</li>
+                </ol>
+        </div>
+        <div class="card bg-Aquamarine">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!--<thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>-->
+                <tbody>
+                    <tr>
+                        <td>Компания 1</td>
+                        <td>Frontend</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Компания 2</td>
+                        <td>Software Engineer</td>
+                        <td>2016-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Компания 3</td>
+                        <td>Senior Frontend</td>
+                        <td>2017-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
 
-    <h1>Связаться со мной</h1>
-    <div>
-        <label for="">Имя</label>
-        <input type="text" placeholder="Введите имя">
-    </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">Имя</label>
+                    <input type="text" placeholder="Введите имя">
+                </div>
 
-    <div>
-        <label for="">e-mail</label>
-        <input type="e-mail" placeholder="Введите e-mail">
-    </div>
+                <div class="form-group">
+                    <label for="">e-mail</label>
+                    <input type="e-mail" placeholder="Введите e-mail">
+                </div>
+            </div>
 
-    <div>
-        <label for="">Ваше сообщение</label>
-        <br>
-        <textarea placeholder="Введите сообщение..." cols="30" rows="5"></textarea>
-    </div>
+            <div class="form-group">
+                <label for="">Ваше сообщение</label>
+                <br>
+                <textarea placeholder="Введите сообщение..." cols="30" rows="5"></textarea>
+            </div>
 
-    <div>
-        <input type="submit" value="Отправить!">
+            <input class="btn" type="submit" value="Отправить!">
+        </form>
+        
     </div>
 </body>
 </html>
